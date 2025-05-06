@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtUser = new System.Windows.Forms.TextBox();
+            this.TxtContra = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -53,19 +53,19 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "PASSWORD:";
             // 
-            // textBox1
+            // TxtUser
             // 
-            this.textBox1.Location = new System.Drawing.Point(161, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 22);
-            this.textBox1.TabIndex = 2;
+            this.TxtUser.Location = new System.Drawing.Point(161, 41);
+            this.TxtUser.Name = "TxtUser";
+            this.TxtUser.Size = new System.Drawing.Size(191, 22);
+            this.TxtUser.TabIndex = 2;
             // 
-            // textBox2
+            // TxtContra
             // 
-            this.textBox2.Location = new System.Drawing.Point(162, 94);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 22);
-            this.textBox2.TabIndex = 3;
+            this.TxtContra.Location = new System.Drawing.Point(162, 94);
+            this.TxtContra.Name = "TxtContra";
+            this.TxtContra.Size = new System.Drawing.Size(213, 22);
+            this.TxtContra.TabIndex = 3;
             // 
             // button1
             // 
@@ -75,6 +75,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -82,8 +83,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(463, 237);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtContra);
+            this.Controls.Add(this.TxtUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -97,8 +98,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtUser;
+        private System.Windows.Forms.TextBox TxtContra;
         private System.Windows.Forms.Button button1;
     }
 }
