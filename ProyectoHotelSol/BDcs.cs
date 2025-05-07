@@ -160,15 +160,15 @@ namespace ProyectoHotelSol
             Dispose(false);
         }
 
-        public bool ValidarUsuario(string usuario, string contra)
+        public bool ValidarUsuario(string Nombre, string Contraseña)
         {
-            string textcomando = "select count(*) from user where id_user = @id_user and contra = @contraseña";
+            string textcomando = "select count(*) from user where Nombre = @Nombre and Contraseña = @Contraseña";
 
             try
             {
                 Consulta = new MySqlCommand(textcomando, Conexion);
-                Consulta.Parameters.AddWithValue("@id_user", usuario);
-                Consulta.Parameters.AddWithValue("@contraseña", contra);
+                Consulta.Parameters.AddWithValue("@Nombre", Nombre);
+                Consulta.Parameters.AddWithValue("@contraseña", Contraseña);
 
                 int count = Convert.ToInt32(Consulta.ExecuteScalar());
                 return count > 0;
